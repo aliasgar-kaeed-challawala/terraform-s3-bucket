@@ -1,8 +1,8 @@
 provider "aws" {
-  region = var.region
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "akc_bucket" {
-  bucket = var.bucket_name
+  bucket = "akc-tf-gitlab-bucket"
   
 }
